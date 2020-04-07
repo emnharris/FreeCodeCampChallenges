@@ -1,0 +1,101 @@
+<main>
+    <!--This is an example of an HTML comment-->
+    <h1>This is the top-level header. Only use me once!</h1>
+    <h2>Section 1: Outside elements</h2>
+    <h3>Section 1.1: Links</h3>
+    <p>
+        This is a section under a second-level heading using a paragraph element. Now let's add a couple links in a numbered list under this paragraph. We're going to make: a link that targets to a blank page, a dead link, and an internal link to an element on this page.
+    </p>
+
+    <!--Make an Ordered List-->
+    <ol>
+        <li>Link 1: <a target="_blank" href="http://freecodecamp.org">to a blank page</a></li>
+        <li>Link 2: <a href="#">a dead link</a></li>
+        <li>Link 3: <a href="#footer">a link to the footer</a></li>
+    </ol>
+        
+    <p>
+        In the next section, we'll add photos to a page, and even make a photo a link that you can click on.
+    </p>
+
+    <h3> Section 1.2: Images</h3>
+    <p>
+        This is a section under a third-level heading using a paragraph element. Let's put a bulleted list under this paragraph that covers what we'll add to this section in HTML:
+    </p>
+
+    <!--Make an Un-ordered List-->
+    <ul>
+        <li>We'll add a photo to this section.</li>
+        <li>We'll assign the photo alternate text that screen readers and search engines can read.</li>
+        <li>We'll even make a photo into a link.</li>
+    </ul>
+    <p>
+        Here's our regular image with alternate text assigned for accessibility:
+    </p>
+    
+    <img source="https://images2.minutemediacdn.com/image/upload/c_crop,h_1414,w_2101,x_20,y_0/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg?" alt="a tabby cat with wide orange eyes">
+
+    <p>
+        Now let's include a photo that's also a link:
+    </p>
+
+   <!--Remember to put photos between the a tags-->
+    <a target="_blank" href="https://www.austinpetsalive.org/">
+        <img source="https://www.nicepng.com/png/detail/58-582775_free-icons-png-orange-cat-transparent-background.png" alt="an orange cat with its paw raised">
+   </a>
+
+   <p>Click the cat to adopt from APA!</p>
+
+    <h2>Section 2: Interactive Elements</h2>
+    <p>
+        Here's a new section under another second-level heading. We'll put elements that allow someone browsing your web page to interact with it by sending it data.
+    </p>
+
+    <h3>Section 2.1: Input Box</h3>
+    <p>
+        You can make a box where a user can type an answer and send it to the server hosting your website. We'll do this by creating an input field and adding a "submit" button to it.
+    </p>
+    
+    <!--Make a form element that sends the input data to a page-->
+    <form action="/search"><!--The string text is a URL slug for your site-->
+        <!--Makes a search bar section:-->
+        <input type="test" placeholder="type in a search word">
+        <!--Remember to put the button text in bewteen tags-->
+        <button type="submit">Go!</button>
+    </form>
+
+    <p>
+        If you want to make an input box required (like if you're creating a page with a form and someone needs to fill out their name), just add "required" to the input tag.
+    </p>
+
+    <!--Makes form fields with mandatory input-->
+    <form action="/info"><!--Remember to place in a form tag-->
+        <input type="text" required placeholder="Name">
+        <input type="text" required placeholder="Email">
+        <p>
+            <button type="submit">Submit</button>
+    </form>
+        </p>
+
+    <h3>Section 2.2: Radio Buttons</h3>
+    <p>
+        Use radio buttons to let a user choose from predetermined options:
+    </p>
+    <form action="/answers">
+        <p>
+            Cats are:
+            <p>
+            <label>
+                <input type="radio" name="objective-test">Amazing
+            </label>
+            <label>
+                <input type="radio" name="objective-test">Perfect
+            </label> 
+    </form>
+   
+
+</main>
+
+<footer id="footer">
+
+</footer>
