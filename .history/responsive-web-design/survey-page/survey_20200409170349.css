@@ -1,0 +1,20 @@
+h1 {
+    font-family: "PT Serif", serif;
+    font-size: 24px;
+}
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+}
+#navbar {
+    margin: 10%;
+}
+#title {
+    width: 80%;
+    display: flex;
+    align-content: center;
+}

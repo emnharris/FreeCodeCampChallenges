@@ -1,0 +1,31 @@
+h1 {
+    font-family: "PT Serif", serif;
+    font-size: 28px;
+    font-weight: 300;
+}
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    color: #333f48;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 200;
+}
+#navbar {
+    width: 100%;
+    border-bottom: 1px #d6d2c4 solid;
+}
+#title {
+    margin-left: 10vmax; */
+    margin-right: 10vmax; */
+    padding: .4em .8em .8em .8em;
+    
+}
+footer {
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
