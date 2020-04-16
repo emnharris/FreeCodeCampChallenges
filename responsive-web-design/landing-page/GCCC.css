@@ -64,6 +64,13 @@ img {
     max-width: 420px;
 }
 
+.img-about {
+    width: 100%;
+    padding: 10px 10px;
+    display: float; float: right; 
+    margin: 10px -8px 20px 20px
+}
+
 body {
     margin: 0px;
 }
@@ -97,9 +104,9 @@ body {
     text-shadow: 2px 2px #333f48;
 }
 .hero-link:hover {
-    background-color:  #333f48; opacity: .9;
-    box-shadow: 2px 2px #d6d2c4;
-    text-decoration: none;
+    /* background-color:  #333f48; opacity: .9; */
+    /* box-shadow: 2px 2px #d6d2c4; */
+    /* text-decoration: none; */
 }
 
 /* Navbar styles */
@@ -168,7 +175,7 @@ body {
 
 
 /* Alignment styles */
-/* .left {
+.left {
     /* float: left; */
     /* display: flex;flex-flow: column; */
     display: grid;
