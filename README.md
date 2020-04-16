@@ -10,7 +10,7 @@ This repo contains the actual HTML and CSS files, but you can view the pages dir
 
 * **Challenge 2:** Build a survey form
 
-* **Challenge 3:** Build a landing page
+* **Challenge 3:** [Build a landing page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/landing-page/GCCC.html)
 
 * **Challenge 4:** Build a technical documentation page
 
