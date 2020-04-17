@@ -1,0 +1,22 @@
+code {
+    background-color: rgb(235, 232, 232);
+    padding: .1em;
+    border-radius: 10%;
+}
+#code-block {
+    background-color: rgb(235, 232, 232);
+    padding: 10px;
+    width: auto;
+    margin: 1em;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+p, li {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}

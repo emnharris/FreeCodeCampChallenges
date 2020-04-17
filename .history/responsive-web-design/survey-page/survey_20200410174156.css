@@ -1,0 +1,64 @@
+h1 {
+    font-family: "PT Serif", serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+}
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    color: #333f48;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 200;
+}
+main {
+    clear: both;
+}
+footer {
+    position: relative;
+    display: flex;
+}
+.narrow {
+    margin-left: 15vmax;
+    margin-right: 15vmax;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#orange-bar {
+    width: 100%;
+    border-bottom: 1px #d6d2c4 solid;
+    max-height: 60px;
+}
+#title {
+    margin-left: 15vmax; 
+    margin-right: 15vmax;
+    position: relative;
+    float: left;
+    display: flex;
+}
+#link {
+    padding: 1em;
+    position: relative;
+    float: right;
+    display: flex;
+}
+#link:hover {
+    color: #bf5700;
+    background-color: transparent;
+    /* border: 1px #d6d2c4 solid; */
+}
+#logo {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 75; 
+    height: auto;
+}

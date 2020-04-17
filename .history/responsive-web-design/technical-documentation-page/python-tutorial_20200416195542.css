@@ -1,0 +1,132 @@
+code {
+    background-color: rgb(229, 234, 229);
+    padding: .1em;
+    border-radius: 10%;
+}
+.code-block {
+    background-color: rgb(229, 234, 229);
+    padding: 1em;
+    width: auto;
+    margin: 1em;
+}
+body {
+    margin: 0px;
+}
+main {
+    margin: 5%;
+    margin-left: 400px;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+h3, h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+p, li {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+/* navbar styling */
+#navbar {
+    background-color: rgb(60, 108, 140);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    border-bottom: rgb(252, 211, 68) 6px solid;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar > h2 {
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#navbar > a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar > a:hover {
+    text-decoration: underline;
+}
+
+/* sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding-top: 90px;
+    padding-left: 50px;
+    overflow-x: hidden;
+    background-color: #e5eae5;
+    /* background: linear-gradient(90deg, #e5eae5, white); */
+}
+
+h3 > a {
+    text-decoration: none;
+    color: black;
+}
+h3 > a:hover {
+    color:#3c6c8c;
+    text-decoration: underline;
+}
+
+/* header styling */
+header {
+    /* background: rgb(229, 234, 229); */
+    padding-top: 75px;
+}
+#logo {
+    height: 1em;
+    width: auto;
+}
+
+#examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 20px;
+    align-items: baseline;
+}
+#onetwothree {
+    /* grid-column: 1/2; */
+    /* border: rgb(252, 211, 68) 6px solid; */
+    width: 1fr;
+    align-items: center;
+    padding: 1em;
+}
+#broken {
+    /* grid-column: 2/3; */
+    
+    /* border: rgb(252, 211, 68) 6px solid; */
+    align-items: center;
+    padding: 1em;
+    
+}
+#infinite {
+    /* grid-column: 3/4; */
+    
+    /* border: rgb(252, 211, 68) 6px solid; */
+    align-items: center;
+    padding: 1em;
+}

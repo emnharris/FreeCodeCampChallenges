@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand&family=Raleway&display=swap" rel="stylesheet">
+
+        <!--Import stylesheet-->
+        <link rel="stylesheet" type="text/css" href="python-tutorial.css">
+    </head>
+
+    <body>
+        <title>
+            Programming with Python: Repetition Structures
+        </title>
+        <navbar id="navbar">
+            <h2><a href="https://github.com/emnharris/COSC-1336/wiki">Getting started</a></h2>
+            <h2><a href="https://www.python.org/downloads/" target="_blank">Download Python</a></h2>
+            <h2><a href="https://code.visualstudio.com/download" target="_blank">Download VSC</a></h2>
+        </navbar>
+        <div class="sidebar" id="sidebar">
+            <h2>Navigation</h2>
+            <h3><a href="#4.1">4.1. Introduction</a></h3>
+            <h3><a href="#4.2">4.2. <code>while</code> loops</a></h3>
+        </div>
+        <header>
+            <h1>Programming with Python
+            <img src="https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png" alt="python logo" id="logo"></h1>
+            <h2>Repetitive Structures</h2>
+        </header>
+        <main>
+            <section id="4.1">
+                <h3>4.1. Introduction </h3>
+                <p>Repetition structures are methods for forcing a program to re-run lines of code rather than repeating the code in sequence.</p>
+
+                <p>Benefits of repetitive structures include:</p>
+                <ul>
+                    <li>shorter, simpler code</li>
+                    <li>less likelihood for mistakes</li>
+                    <li>greater ease in implementing widespread changes</li>
+                </ul>
+                
+                <p>One repetition of a repetitive statement is called an <b>iteration</b>.</p>
+
+                <p>Examples of repetition structures include <code>while</code> loops and <code>for</code> loops, discussed on this page below.</p>
+            </section>
+            <section id="4.2">
+                <h3>4.2. <code>while</code> loops</h3>
+                <p>The most syntactically simple repetitive structure is a <code>while</code> loop. These loops are <b>condition-controlled</b> loops. They are made up of two components: a condition which they test for, and a statement they execute on a loop. Because <code>while</code> loops check whether a condition is true or false <i>before</i> running, they are also known as <b>pre-test loops</b>.</p>
+
+                <p>A <code>while</code> loop will only end if a condition changes within its statement which causes its run condition to become false. If no such condition exists, it will become an <b>infinite loop</b>, a loop that will never stop running.</p>
+
+                
+                <h4>Examples of <code>while</code> loops</h4>
+                <div id="examples">
+                    <div id="onetwothree">
+                        <p>This loop will print 1, 2, 3, then stop:</p>
+                        <div id="code-block">
+                            <code>
+                                num = 1
+                                <br>
+                                <br>while (num <= 3):
+                                <br>    print(num)
+                                <br>    num = num + 1
+                                <br>====================
+                                <br>1
+                                <br>2
+                                <br>3
+                            </code>
+                        </div>
+                    </div>
+                    <div id="broken">
+                        <p>This loop won't print anything:</p>
+                        <div id="code-block">
+                            <code>
+                                num = 4
+                                <br> 
+                                <br>while (num <= 3):
+                                <br>    print(num)
+                                <br>    num = num + 1
+                                <br>====================
+                                <br>
+                                <br>
+                            </code>
+                        </div>
+                    </div>  
+                    <div id="infinite">
+                        <p>This loop will run infinitely:</p>
+                        <div id="code-block">
+                            <code>
+                                num = 1
+                                <br>
+                                <br>while (num <= 3):
+                                <br>    print(num)
+                                <br>====================
+                                <br>1
+                                <br>1
+                                <br>1
+                                <br>...
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="4.3">
+                ## 4.3 `for` loops
+Also known as **count-controlled loops** `for` loops have more built-in options for control than simple `while` loops. They are designed to work with data sequences, and use a **target variable** to reference each item in a sequence as the loop iterates.
+
+###### Example of the structure of a `for` loop:
+```
+for variable in [val_1, val_2, val_3]:
+  statement executes
+```
+In the example above, **variable** is the target variable which is referenced in each iteration as the loop moves through the data sequence (**val_1, val_2, val_3**).
+
+###### A simple `for` loop:
+```
+print('This program prints the first 5 prime numbers:')
+for num in [2, 3, 5, 7, 11]:
+  print(num)
+=======================================================
+This program prints the first 5 prime numbers:
+2
+3
+5
+7
+11
+```
+
+### The `range` function
+
+This function returns an **iterable object**, or an object with a sequence of values that can be iterated over. For example, 5 can be iterated from 0 to 5 as 0, 1, 2, 3, 4.
+
+_By default, the `range` function moves in increases of 1._
+
+Remember than when using range, the iterable object is considered the ending limit. That is to say, as in the above example, we stop iterating *before* 5, not *at* 5. It is non-inclusive to 5.
+
+There are several characteristics to `range` functions. One argument will be interpreted as the ending limit (non-inclusive). Two arguments will be interpreted as a starting value (inclusive) and an ending limit (non-inclusive). Three arguments will be interpreted as an additional step value.
+
+###### Begins at 1, goes up to 10, changes by 2:
+```
+for num in range (1, 10, 2):
+  print(num)
+=========================================
+1
+3
+5
+7
+9
+```
+
+###### Begins at 5, goes down to 1 in steps of 1:
+```
+for star in range (5, 1, -1):
+  print('*' * star)
+=========================================
+*****
+****
+***
+**
+*
+```
+
+
+### Calculations with the Target Variable
+Because the target variable is assigned the values 1, then 2, then 3, etc. as a loop runs, it can be helpful to use it to run certain calculations using it.
+
+###### This program displays a table of square roots:
+```
+for number in range(1, 6):
+    square = number**2
+    print(number, '\t', square)
+=========================================
+1    1
+2    4
+3    9
+4    16
+5    25
+```
+## 4.4 Running Totals
+Running totals can be executed by initializing an **accumulator variable** and using a loop. The accumulator is what holds the total, which is added to with each loop. The accumulator must be initialized, and set to 0, or the total will not be accurate.
+
+###### Calculates the sum of 5 numbers:
+```
+MAX = 5
+total = 0
+for counter in range (MAX):
+    number = int(input('Enter a number: ')
+    total += number
+print('Total:',total)
+=========================================
+Enter a number: 1
+Enter a number: 2
+Enter a number: 3
+Enter a number: 4
+Enter a number: 5
+Total: 15
+```
+
+### Augmented Assignment Operators
+Common operations such as `x = x + 1` can be shortened in Python.  This works with numbers and variables (e.g., `total += number`).
+
+`+=`    `x += 1` is equivalent to `x = x + 1`
+
+`-=`    `x -= 1` is equivalent to `x = x - 1`
+
+`*=`    `x *= 1` is equivalent to `x = x * 1`
+
+`/=`    `x /= 1` is equivalent to `x = x / 1`
+
+`%=`    `x %= 1` is equivalent to `x = x % 1`
+
+## 4.5 Sentinels
+A **sentinel** is a special value that marks the end of a sequence of values. When a program reads the sentinel value, it knows it has reached the end of the sequence, so the loop terminates. Sentinels are useful when the programmer does not know how many values are going to be input, and it would be cumbersome to ask after every iteration whether the user has more data.
+
+Note, a sentinel value must be distinct enough that it cannot be mistaken as a regular value in the sequence. An example of a distinct sentinel would be using a negative value when asking for student grades, because a negative score is impossible.
+
+## 4.6 Input Validation Loops
+Data output can only be as good as data input, so data validation is frequently an important component of writing a program. *Input validation* is data validation that runs when the user inputs data into a program. If the input is invalid, the program will discard it and prompt the user for valid data instead. The program should loop until valid data is entered.
+
+The input that is received by the program just before input validation runs is called the **priming read**. Its purpose is to get the first input value to be tested by the validation loop.
+
+######Example with the priming read commented:
+```
+score = int(input('Enter a score: '))    #priming read
+while score < 0 or score > 100:
+    print('ERROR')
+    score = int(input('Enter a score: '))
+```
+
+
+            </section>
+            <section id="4.4">
+
+            </section>
+            <section id="4.5">
+
+            </section>
+            <section id="4.6">
+
+            </section>
+            <section id="4.7">
+                <h3>4.7. Nested Loops</h3>
+                <p>A loop within a loop is a nested loop. A good example would be a program which simulates a clock.</p>
+
+                <p>Clock simulation:</p>
+                <code class="code-block">
+                for hours in range (24):
+                    <br>for minutes in range (60):
+                    <br>for seconds in range (60):
+                    <br>print(minutes,':',seconds)
+                    <br>=========================================
+                    <br># This program will count through every 
+                    <br># second for 24 hours!
+                </code>
+                <p>The innermost loop will iterate 60 times for each loop of the middle loop, which will in turn iterate 60 times for the next loop, which will iterate 24 times for the outside loop!</p>
+
+                <p>Therefore, we can say the following about nested loops:</p>
+                <ul>
+                    <li>
+                        the inner loop goes through every iteration of the outer loops
+                    </li>
+                    <li>
+                        inner loops complete iterations faster than outer loops
+                    </li>
+                    <li>
+                        to get the total iterations of a nested loop, multiple the number of iterations of all the loops in a nest
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

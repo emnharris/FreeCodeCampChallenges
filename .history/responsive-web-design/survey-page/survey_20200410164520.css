@@ -1,0 +1,63 @@
+h1 {
+    font-family: "PT Serif", serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 300;
+}
+h2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    color: #333f48;
+}
+p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 200;
+}
+#logo {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 75; 
+    height: auto;
+}
+#navbar {
+    width: 100%;
+    border-bottom: 1px #d6d2c4 solid;
+    max-height: 60px;
+}
+#link {
+    background-color: transparent;
+    line-height: 1em;
+    padding: 1em;
+    position: relative;
+    float: right;
+    display: flex;
+}
+#title {
+    margin-left: 10vmax; 
+    margin-right: 10vmax; 
+    /* padding: .4em .8em .8em 0em;  */
+    position: relative;
+    float: left;
+    display: flex;
+}
+#link:hover {
+    color: #bf5700;
+    background-color: transparent;
+    /* border: 1px #d6d2c4 solid; */
+}
+footer {
+    width: 75%;
+    margin: auto;
+    position: absolute;
+    display: flex;
+}
+main {
+    margin-left: 10vmax;
+    margin-right: 10vmax;
+    clear: both;
+}
+header {
+    margin: 0px;
+}

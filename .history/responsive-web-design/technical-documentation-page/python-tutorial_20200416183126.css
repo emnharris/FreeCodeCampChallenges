@@ -1,0 +1,84 @@
+code {
+    background-color: rgb(229, 234, 229);
+    padding: .1em;
+    border-radius: 10%;
+}
+#code-block {
+    background-color: rgb(229, 234, 229);
+    padding: 1em;
+    width: 18ch;
+    margin: 1em;
+}
+body {
+    margin: 0px;
+}
+main {
+    margin: 5%;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+h3, h4 {
+    font-family: 'Quicksand', sans-serif;
+}
+p, li {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5em;
+}
+/* navbar styling */
+#navbar {
+    background-color: rgb(60, 108, 140);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    border-bottom: rgb(252, 211, 68) 6px solid;
+}
+
+#navbar > h2 {
+    font-size: 1em;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+#navbar > a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar > a:hover {
+    text-decoration: underline;
+}
+
+/* header styling */
+header {
+    /* background: rgb(229, 234, 229); */
+    padding: 2em;
+    background: linear-gradient(90deg, (rgb(229, 234, 229)), white);
+}
+#logo {
+    height: 1em;
+    width: auto;
+}
+
+#examples {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+#onetwothree {
+    grid-column: 1/2;
+    border: gold solid 4px;
+}
