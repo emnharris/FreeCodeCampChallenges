@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  /* Styles for paragraph attributes */
     h1 {
         text-align: center; 
@@ -81,9 +82,151 @@
         opacity:0.95;
     }
     
+=======
+/* full body styling */
+body {
+    margin: 0px;
+    background: url("https://image.pbs.org/video-assets/DanroJD-asset-mezzanine-16x9-yRKvVw8.png")center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
 
-/* Styles for id attributes */
+
+/* navbar styling */
+#navbar {
+    background-color: rgba(215, 215, 215, 0.5);
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#navbar > h2 {
+    font-size: 1.3em;
+}
+>>>>>>> 8f674398a4fd700808325f67f865a3530253fcdf
+
+
+/* hero section styling */
+#hero {
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#title {
+    grid-column: 1/4;
+    align-items: center;
+}
+#subtitle {
+    grid-column: 1/2;
+    align-items: flex-start;
+}
+#quote {
+    grid-column: 3/4;
+    align-items: flex-end;
+}
+.quote-text {
+    font-size: 1.15em;
+    line-height: 1.75em;
+}
+.quote-attribute {
+    text-align: right; 
+    font-style: italic;
+}
+#years{
+    font-size: 1.5em; 
+    font-weight: 500;
+}
+h1 {
+    font-size: 3em;
+}
+header > section > h2 {
+    font-style: italic;
+    font-weight: 500;
+}
+
+
+/* main section styling */
+.body-text {
+    background-color: rgba(215, 215, 215, 0.75);
+    padding: 2em;
+    font-size: 1.5em;
+    line-height: 2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    text-align: center;
+    width: 1fr;
+    border-bottom: #5c5c5c 1px solid;
+}
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* footer styling */
+footer > p {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 550;
+    padding: .1em;
+}
+
+
+/* Small-screen responsive styling */
+@media (max-width: 1350px) and (min-width: 1200px)
+{
+    #title-text {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
+    #subtitle-text {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
     #quote {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+    }
+    #years {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px)
+{
+    #hero {
+        display: block;
+    }
+    #title-text {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
+    #subtitle-text {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
+    #quote {
+<<<<<<< HEAD
         margin-left: 20px;
         margin-top: 20px; 
         margin-bottom: 20px; 
@@ -118,3 +261,18 @@
     #year:hover {
         transform: scale(1.2);
     }
+=======
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        width: 100%;
+    }
+    #years {
+        background-color: rgba(215, 215, 215, 0.75);
+        padding: 1em;
+        text-align: center;
+    }
+    .list {
+        display: block;
+    }
+}
+>>>>>>> 8f674398a4fd700808325f67f865a3530253fcdf
