@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head">
+    <!--This is an example of an HTML comment-->
+    
+    <!--This is an anchor (note the "a" tag) for the footer link to return to top of page.-->
+    <a name="top"></a>
+    <h1>This is the top-level header. Only use me once!</h1>
+</head>
+
+<body>
+    <h2>Section 0: Setting up a page</h2>
+    <p>
+        Declare the <b>Doctype</b>> of an HTML page at the beginning of your code. You will do this for every HTML document you set up. Always close all HTML in the <b>html</b> tag.
+    </p>
+        
+    <p>
+        Use a <b>head</b> element to tag your title. Use a <b>main</b> element to tag the main body. Tag with a <b>div</b> element to contain elements you want to divide from others. The <b>footer</b> element is for the bottom of the page.
+    </p>
+
+    <h2>Section 1: Outside elements</h2>
+    <h3>Section 1.1: Links</h3>
+    <p>
+        This is a section under a second-level heading using a paragraph element. Now let's add a couple links in a numbered list under this paragraph. We're going to make: a link that targets to a blank page, a dead link, and an internal link to an element on this page.
+    </p>
+
+    <!--Make an Ordered List-->
+    <ol>
+        <li>Link 1: <a target="_blank" href="http://freecodecamp.org">to a blank page</a></li>
+        <li>Link 2: <a href="#">a dead link</a></li>
+        <li>Link 3: <a href="#footer">a link to the footer</a></li>
+    </ol>
+        
+    <p>
+        In the next section, we'll add photos to a page, and even make a photo a link that you can click on.
+    </p>
+
+    <h3> Section 1.2: Images</h3>
+    <p>
+        This is a section under a third-level heading using a paragraph element. Let's put a bulleted list under this paragraph that covers what we'll add to this section in HTML:
+    </p>
+
+    <!--Make an Un-ordered List-->
+    <ul>
+        <li>We'll add a photo to this section.</li>
+        <li>We'll assign the photo alternate text that screen readers and search engines can read.</li>
+        <li>We'll even make a photo into a link.</li>
+    </ul>
+    <p>
+        Here's our regular image with alternate text assigned for accessibility:
+    </p>
+    
+    <img src="https://lh3.googleusercontent.com/proxy/EoN7CyKfAVo8NbteixbNki7mDi0A-uaVcAOfRW4l5tbXi5zzvEbtOvOKtNvJcydvfwLFy_aBfsQhb4CP_8QvjgBY-w2-RzRCLxaWZ888ZMq_19c" alt="two gray tabby kittens">
+
+    <p>
+        Now let's include a photo that's also a link:
+    </p>
+
+   <!--Remember to put photos between the a tags-->
+    <a target="_blank" href="https://www.austinpetsalive.org/">
+        <img src="http://www.pngall.com/wp-content/uploads/2016/05/Kitten-PNG-HD.png" alt="fluffy kitten with blue eyes">
+   </a>
+
+   <p>
+       Click the cat to adopt from APA!
+    </p>
+
+    <h2>Section 2: Interactive Elements</h2>
+    <p>
+        In this section, we'll cover several <b>input</b> types. Input elements inside of <b>form</b> tags allow someone browsing your web page to interact with it by sending it data.
+    </p>
+
+    <h3>Section 2.1: Input Box</h3>
+    <p>
+        You can make a box where a user can type and send their response to the server hosting your website. We'll do this by creating an input field and adding a "submit" button to it.
+    </p>
+    
+    <!--Make a form element that sends the input data to a page-->
+    <form action="/search"><!--The string text is a URL slug for your site-->
+        <!--Makes a search bar section:-->
+        <input type="test" placeholder="type in a search word">
+        <!--Remember to put the button text in bewteen tags-->
+        <button type="submit">Go!</button>
+    </form>
+
+    <p>
+        If you want to make an input box required (like if you're creating a page with a form and someone needs to fill out their name), just add "required" to the input tag.
+    </p>
+
+    <!--Makes form fields with mandatory input-->
+    <form action="/info"><!--Remember to place in a form tag-->
+        <input type="text" required placeholder="Name">
+        <input type="text" required placeholder="Email">
+        <p>
+            <button type="submit">Submit</button>
+    </form>
+        </p>
+
+    <h3>Section 2.2: Radio Buttons</h3>
+    <p>
+        Use radio buttons to let a user choose from predetermined options:
+    </p>
+    <form action="/answers">
+ 
+        <p><i>Your favorite cat is:</i></p>
+            <!--when you define labels it's best practice to assign "for"-->
+            <label for="Ada">
+                <!--When assigning input, it's best practive to assign the "id" attribute.
+                
+                Assign the "value" attribute for the form to assign this answer something other than the default, which is 'on'.
+            
+                To have the first choice checked as an example, simply add "checked" inside the <label> tag.-->
+                <input id="Ada" value="Ada" type="radio" name="favorite-cat" checked> Ada
+            </label>
+            <p></p>
+            <label for="Endy">
+                <input id="Endy" value="Endy" type="radio" name="favorite-cat"> Endy
+            </label>
+            <p></p>
+            <label for="Kazuto">
+                <input id="Kazuto" value="Kazuto" type="radio" name="favorite-cat"> Kazuto
+            </label>
+            <p></p>
+            <label for="Kirito">
+                <input id="Kirito" value="Kirito" type="radio" name="favorite-cat"> Kirito
+            </label>
+            <p></p>
+            <label for="Luna">
+                <input id="Luna" value="Luna" type="radio" name="favorite-cat"> Luna
+            </label>
+            </p>
+    </form>
+   
+    <h3>Section 2.3: Checkboxes</h3>
+    <p>
+        Now let's create a selection of checkboxes. The user will be able to select more than one answer with this kind of input action. As always, don't forget to put your input section into form tags.
+    </p>
+    <form action="/answers">
+        <p>
+            <i>Cats are:</i>
+        </p>
+        <label for="loving">
+            <input id="loving" value="loving" type="checkbox" name="personality" checked> loving
+        </label>
+        <p></p>
+        <label for="smart">
+            <input id="smart" value="smart" type="checkbox" name="personality"> smart
+        </label>
+        <p></p>
+        <label for="funny">
+            <input id="funny" value="funny" type="checkbox" name="personality"> funny
+        </label>
+    </form>
+
+</body>
+
+<footer id="footer">
+<p>
+    Return to the <a href="#top">top of the page</a>.
+</p>
+</footer>
+</html>
