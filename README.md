@@ -8,10 +8,10 @@ This repo contains the actual HTML and CSS files, but you can view the pages dir
 
 * **Challenge 1:** [Build a tribute page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/tribute-page/UKLG.html)
 
-* **Challenge 2:** Build a survey form
+* **Challenge 2:** [Build a survey form](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/survey-page/survey.html)
 
 * **Challenge 3:** [Build a landing page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/landing-page/GCCC.html)
 
-* **Challenge 4:** Build a technical documentation page
+* **Challenge 4:** [Build a technical documentation page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/technical-documentation-page/python-tutorial.html)
 
 * **Challenge 5:** Build a personal portfolio page
