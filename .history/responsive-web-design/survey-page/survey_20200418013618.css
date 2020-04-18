@@ -19,6 +19,17 @@ p {
     line-height: 30px;
     font-weight: 200;
 }
+footer {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 100; 
+    height: auto;
+}
+#navbar {
+    width: 100%;
+    border-bottom: 1px #d6d2c4 solid;
+    max-height: 60px;
+}
 
 header {
     border-bottom: #d6d2c4 1px solid;
@@ -28,13 +39,13 @@ header {
     margin-right: 10vmax;
     padding: 1em;
 }
+#link:hover {
+    color: #bf5700;
+    background-color: transparent;
+    /* border: 1px #d6d2c4 solid; */
+}
 main {
     margin-left: 10vmax;
     margin-right: 10vmax;
-}
-input {
-    font-size: 18px;
-}
-footer {
-    padding-bottom: 10vmax;
+    
 }

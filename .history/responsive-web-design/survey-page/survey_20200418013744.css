@@ -19,7 +19,12 @@ p {
     line-height: 30px;
     font-weight: 200;
 }
-
+footer {
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 75px; 
+    height: auto;
+}
 header {
     border-bottom: #d6d2c4 1px solid;
 }
@@ -31,10 +36,5 @@ header {
 main {
     margin-left: 10vmax;
     margin-right: 10vmax;
-}
-input {
-    font-size: 18px;
-}
-footer {
-    padding-bottom: 10vmax;
+    
 }
