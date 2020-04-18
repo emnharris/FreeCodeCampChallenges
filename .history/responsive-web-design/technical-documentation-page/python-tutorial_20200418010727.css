@@ -111,8 +111,7 @@ table {
     background: linear-gradient(180deg, #e5eae5, #a3a8a3);
 }
 .sidebar > h3 {
-    padding-top: none;
-    font-size: 1em;
+    padding: none;
 }
 h3 > a {
     text-decoration: none;

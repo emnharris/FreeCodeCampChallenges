@@ -44,7 +44,6 @@ h2 > a:hover {
 
 h3, h4 {
     font-family: 'Quicksand', sans-serif;
-    padding-top: .5em;
 }
 p, li, td { 
     font-family: 'Raleway', sans-serif;
@@ -56,8 +55,9 @@ th {
     font-style: bold;
 }
 table {
+    width: 100%;
     border: rgb(252, 211, 68) 6px solid;
-    padding: 1em;
+    padding: .5em;
 }
 
 /* navbar styling */
@@ -85,7 +85,6 @@ table {
 #navbar > a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
 }
 
 #navbar > a:hover {
@@ -109,10 +108,7 @@ table {
     padding-left: 50px;
     overflow-x: hidden;
     background: linear-gradient(180deg, #e5eae5, #a3a8a3);
-}
-.sidebar > h3 {
-    padding-top: none;
-    font-size: 1em;
+    transition: 0.5s;
 }
 h3 > a {
     text-decoration: none;
@@ -227,20 +223,12 @@ header {
         border-top: #a3a8a3 3px solid;
         border-bottom: #a3a8a3 4px solid;
     }
-    main > h3, h4 {
+    h3 {
         font-family: 'Quicksand', sans-serif;
         border-top: rgb(252, 211, 68) 3px solid;
-        padding-top: 1.5em;
-    }
-   .drop-text {
-        border: none;
-        font-size: 1em;
-        line-height: 1em;
+        line-height: 2em;
     }
     table {
         width: 100%;
-    }
-    tr {
-        text-align: center;
     }
 }
