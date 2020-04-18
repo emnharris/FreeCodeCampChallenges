@@ -160,7 +160,6 @@ header {
   
 .dropdown:hover .dropdown-content {
     display: block;
-    border-bottom: #a3a8a3 3px solid;
 }
   
 #examples {

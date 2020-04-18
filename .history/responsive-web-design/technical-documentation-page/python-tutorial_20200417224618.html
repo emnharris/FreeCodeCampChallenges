@@ -18,7 +18,17 @@
             <h2><a href="https://code.visualstudio.com/download" target="_blank">Download VSC</a></h2>
         </navbar>
         <div class="sidebar" id="sidebar">
-            <h2 class="nav-header">Navigation</h2>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px";
+            }
+            
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+  }
+        </script>
+            <h2 id="sidebar" class="nav-header">Navigation</h2>
             <h3><a href="#4.1">4.1. Introduction</a></h3>
             <h3><a href="#4.2">4.2. <code>while</code> Loops</a></h3>
             <h3><a href="#4.3">4.3. <code>for</code> Loops</a></h3>
@@ -33,18 +43,6 @@
             <h1>Programming with Python
             <img src="https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png" alt="python logo" id="logo"></h1>
             <h2>Repetitive Structures</h2>
-            <section class="dropdown" id="nav-drop">
-                <h2 class="nav-header" style="text-align: center;">Navigation</h2>
-                <div class="dropdown-content">
-                <h3><a href="#4.1">4.1. Introduction</a></h3>
-                <h3><a href="#4.2">4.2. <code>while</code> Loops</a></h3>
-                <h3><a href="#4.3">4.3. <code>for</code> Loops</a></h3>
-                <h3><a href="#4.4">4.4. Running Totals</a></h3>
-                <h3><a href="#4.5">4.5. Sentinels</a></h3>
-                <h3><a href="#4.6">4.6. Input Validation Loops</a></h3>
-                <h3><a href="#4.7">4.7. Nested Loops</a></h3>
-            </div>
-            </section>
         </header>
         <main>
             <section id="4.1">
