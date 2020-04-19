@@ -1,0 +1,20 @@
+/* document palette */
+#palette {
+    color: rgb(244, 147, 124);
+    color: rgb(116, 116, 116);
+    color: rgb(188, 195, 171);
+    color: rgb(212, 204, 196);
+}
+
+
+/* header styles */
+
+#title {
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(244, 147, 124);
+}
+
+body {
+    margin: 0px;
+    background: linear-gradient(315deg,#747474, #f3d4cc);
+}
