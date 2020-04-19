@@ -16,4 +16,4 @@ This repo contains the actual HTML and CSS files, but you can view the pages dir
 
 * **Challenge 5:** Build a personal portfolio page
 
-* **Bonus:** [Book review site](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/book-site/books.html)
+* **Bonus:** [Book review site](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/book-reviews/books.html)
