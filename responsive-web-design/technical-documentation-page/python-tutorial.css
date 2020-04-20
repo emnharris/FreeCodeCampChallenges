@@ -17,6 +17,9 @@ hr {
 body {
     margin: 0px;
 }
+html {
+    scroll-padding-top: 80px;
+  }
 main {
     margin: 5%;
     margin-left: 400px;
