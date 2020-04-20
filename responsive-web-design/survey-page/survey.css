@@ -1,15 +1,60 @@
 body {
     margin: 0px;
 }
+
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: white;
+    border-bottom: #d6d2c4 1px solid;
+    position: fixed;
+    left:0;
+    top: 0;
+}
+#utexas {
+    display: block; 
+    background-color: #bf5700; 
+    height: 40px; 
+    text-align: center;
+}
+#title {
+    margin-left: 10vmax; 
+    margin-right: 10vmax;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-gap: 1rem;
+}
 h1 {
     font-family: "PT Serif", serif;
     font-size: 28px;
     line-height: 30px;
     font-weight: 300;
 }
+
+.top-link {
+    color: #333f48;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
+.top-link:hover {
+    color: #bf5700;
+    text-decoration: underline;
+}
+
+
+/* main body styling */
+.text {
+    margin-left: 10vmax;
+    margin-right: 10vmax;
+}
 h2 {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
     color: #333f48;
 }
 p {
@@ -19,22 +64,48 @@ p {
     line-height: 30px;
     font-weight: 200;
 }
+#intro {
+    padding-top: 10vmax;
+    padding-bottom: 1vmax;
+    background-color: #f9fafc;
+}
 
-header {
-    border-bottom: #d6d2c4 1px solid;
-}
-#title {
-    margin-left: 10vmax; 
-    margin-right: 10vmax;
-    padding: 1em;
-}
-main {
-    margin-left: 10vmax;
-    margin-right: 10vmax;
-}
 input {
     font-size: 18px;
 }
+.button {
+    background-color: #bf5700;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    border: none;
+    padding: .5em;
+}
 footer {
-    padding-bottom: 10vmax;
+    padding-bottom: 4vmax;
+    background-color: #f9fafc;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 260px;
+    padding-top: 4vmax;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 1800px)
+{
+    #title {
+        margin-left: 10vmax; 
+        margin-right: 10vmax;
+        padding: 1em;
+        display: block;
+    }
+    .top-link {
+        margin-left: 5%;
+    }
+    #intro {
+        padding-top: 200px;
+        padding-bottom: 1vmax;
+        background-color: #f9fafc;
+    }
 }

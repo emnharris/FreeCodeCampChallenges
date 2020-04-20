@@ -39,8 +39,14 @@ h2 > a:hover {
     /* text-shadow: 2px 2px rgb(212, 204, 196); */
     text-decoration: underline;
 }
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(212, 204, 196);
+    font-size: 1em;
+    text-align: center;
+}
 
-#gallery {
+.gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -59,7 +65,7 @@ h2 > a:hover {
 .nav > a:hover {
     color: rgb(244, 147, 124);
 }
-.gallery {
+.gallery-img {
     width: 20vmax;
     height: auto;
     box-shadow: 2px 2px 3px 3px rgba(212, 204, 196,0.3);
