@@ -152,6 +152,10 @@ header {
 }
 
 /* dropdown */
+
+#nav-drop {
+    display: none;
+}
 .accordion {
     background-color: #e5eae5;
     color: black;
