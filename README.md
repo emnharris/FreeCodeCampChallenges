@@ -4,7 +4,7 @@ A collection for the challenges I complete through freecodecamp.org. I'm current
 [My profile on FreeCodeCamp.org](https://www.freecodecamp.org/em-dash-codes)
 
 ## Responsive Web Design projects
-This repo contains the actual HTML and CSS files, but you can view the pages directly in your browser with GitHub Pages by following these links. I created each of these pages solely with HTML, CSS, and a bit of JavaScript without the use of any frameworks. I plan on doing a Bootstrap tutorial once I finish this certification.
+This repo contains the actual HTML and CSS files, but you can view the pages directly in your browser with GitHub Pages by following these links. I created each of these pages solely with HTML, CSS, and a bit of JavaScript without the use of any frameworks.
 
 * **Challenge 1:** [Build a tribute page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/tribute-page/UKLG.html)
 
@@ -15,5 +15,3 @@ This repo contains the actual HTML and CSS files, but you can view the pages dir
 * **Challenge 4:** [Build a technical documentation page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/technical-documentation-page/python-tutorial.html)
 
 * **Challenge 5:** Build a personal portfolio page
-
-* **Bonus:** [Book review site](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/book-reviews/books.html)
