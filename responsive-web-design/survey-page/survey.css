@@ -19,8 +19,6 @@ header {
     text-align: center;
 }
 #title {
-    /* margin-left: 10vmax;  */
-    /* margin-right: 10vmax; */
     max-width: 1600px;
     margin-left: auto;
     margin-right:auto;
@@ -36,7 +34,6 @@ header {
     font-size: 1.5em;
     line-height: 2em;
     font-weight: 300;
-    /* flex-basis: 70%; */
     flex-wrap: nowrap;
     
 }
@@ -47,8 +44,6 @@ header {
     line-height: 2em;
     font-weight: 500;
     text-decoration: none;
-    /* flex-basis: 20%; */
-    /* padding: 0px 10px; */
     justify-content: flex-end;
     flex-wrap: nowrap;
 }
