@@ -14,4 +14,4 @@ This repo contains the actual HTML and CSS files, but you can view the pages dir
 
 * **Challenge 4:** [Build a technical documentation page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/technical-documentation-page/python-tutorial.html)
 
-* **Challenge 5:** Build a personal portfolio page
+* **Challenge 5:** [Build a personal portfolio page](https://emnharris.github.io/FreeCodeCampChallenges/responsive-web-design/portfolio/portfolio.html)
