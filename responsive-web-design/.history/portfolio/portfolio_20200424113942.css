@@ -1,6 +1,6 @@
 #sidebar {
     height: 100%;
-    min-width: 200px;
+    min-width: 100px;
     width: 18%;
     position: fixed;
     top: 0;
@@ -44,10 +44,6 @@ h2 {
 body {
     margin: 0px;
     /* background: linear-gradient(180deg, white, #aab8c4); */
-}
-main {
-    padding-left: 400px;
-    margin-top: 400px;
 }
 .icon {
     width: 30px;

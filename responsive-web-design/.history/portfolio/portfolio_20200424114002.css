@@ -45,10 +45,6 @@ body {
     margin: 0px;
     /* background: linear-gradient(180deg, white, #aab8c4); */
 }
-main {
-    padding-left: 400px;
-    margin-top: 400px;
-}
 .icon {
     width: 30px;
     padding: .5em;

@@ -1,0 +1,14 @@
+#sidebar {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-left: aliceblue;
+}
+h1 {
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2.5em;;
+}

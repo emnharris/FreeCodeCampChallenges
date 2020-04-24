@@ -1,6 +1,5 @@
 #sidebar {
     height: 100%;
-    min-width: 200px;
     width: 18%;
     position: fixed;
     top: 0;
@@ -17,7 +16,6 @@ h1 {
     line-height: 3em;
     color: black;
     padding-right: 8%;
-    margin-top: 30%;
 }
 h2 {
     font-family: 'Spartan', sans-serif;
@@ -43,27 +41,10 @@ h2 {
 }
 body {
     margin: 0px;
-    /* background: linear-gradient(180deg, white, #aab8c4); */
-}
-main {
-    padding-left: 400px;
-    margin-top: 400px;
+    /* background-image: url("https://images.unsplash.com/photo-1551446339-ead5c2425f81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"); */
+    background-size: cover;
 }
 .icon {
     width: 30px;
     padding: .5em;
-}
-.icon:hover {
-    opacity: 0.5;
-}
-.icons {
-    /* position: fixed;
-    bottom: 0;
-    left: 0;
-    padding: 20px; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-right: 5%;
 }
