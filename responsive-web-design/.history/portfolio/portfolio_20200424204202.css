@@ -6,19 +6,7 @@
     top: 0;
     left: 0;
     background: linear-gradient(180deg, #f0f8ff, #aab8c4);
-}
-.title {
     text-align: right;
-}
-.subtitle {
-    font-family: 'EB Garamond', serif;
-    text-align: left;
-    font-size: 2em;
-    font-weight: 200;
-    line-height: 3em;
-    color: black;
-    text-transform: none;
-    padding: none;
 }
 h1 {
     font-family: 'EB Garamond', serif;
@@ -52,18 +40,13 @@ h2 {
     margin-right: auto;
     width: 100%;
 }
-a {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
-}
 body {
     margin: 0px;
+    /* background: linear-gradient(180deg, white, #aab8c4); */
 }
 main {
     padding-left: 400px;
+    margin-top: 400px;
 }
 .icon {
     width: 30px;
@@ -73,34 +56,13 @@ main {
     opacity: 0.5;
 }
 .icons {
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-right: 5%;
-}
-p {
-    font-family: 'Spartan', sans-serif;
-}
-.thumbnail {
-    width: 360px;
-    height: 260px;
-}
-#grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-}
-#about {
-    padding: 30px;
-    margin-top: 160px;
-}
-figure:hover {
-    background: linear-gradient(180deg, #f0f8ff, #aab8c4);
-    transform: scale(1.0001);
-    padding: 15px 15px 0px 15px;
-    transition: .4s;
 }
