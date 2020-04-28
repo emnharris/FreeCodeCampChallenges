@@ -58,6 +58,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    transition: .4s;
 }
 body {
     margin: 0px;
@@ -71,6 +72,7 @@ main {
 }
 .icon:hover {
     opacity: 0.5;
+    transition: .4s;
 }
 .icons {
     display: flex;
