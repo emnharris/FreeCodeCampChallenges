@@ -159,4 +159,21 @@ figure:hover {
     .tiles {
         margin-left: 0px;
     }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+    .thumbnail {
+        width: 300px;
+        height: 200px;
+        padding: 30px;
+    }
+    .tiles {
+        width: 100%;
+        display: block;
+
+    }
+    figure {
+        margin: 0;
+    }
 }
