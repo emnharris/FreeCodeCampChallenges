@@ -1,12 +1,39 @@
-#sidebar {
-    height: 100%;
-    min-width: 200px;
-    width: 18%;
+/* setting up layout */
+body {
+    margin: 0;
+}
+.container {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "sidebar about"
+        "sidebar content"
+        "footer footer";
+    grid-gap: none;
+}
+.sidebar {
+    background: linear-gradient(45deg, #aab8c4, #f0f8ff);
+    grid-template-areas: 1 / 1 / span 1 / span 1;
     position: fixed;
     top: 0;
-    left: 0;
-    background: linear-gradient(180deg, #f0f8ff, #aab8c4);
+    bottom: 0;
+    grid-area: sidebar;
+    min-width: 320px;
 }
+main {
+    grid-template-areas: 2 / 2 / span 1 / span 1;
+    grid-area: content;
+}
+footer {
+    grid-area: footer;
+    width: 100%;
+    text-align: right;
+    padding-top: 2em;
+}
+
+
+/* headings, paragraph styles */
 .title {
     text-align: right;
 }
@@ -38,20 +65,6 @@ h2 {
     line-height: 1.4em;
     padding-right: 8%;
 }
-.profile {
-    border-radius: 50%;
-    width: 160px;
-    padding: 60px 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
 a {
     color: black;
     text-decoration: none;
@@ -60,12 +73,22 @@ a:hover {
     text-decoration: underline;
     transition: .4s;
 }
-body {
-    margin: 0px;
+p {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1em;
+    line-height: 1.75em;
 }
-main {
-    padding-left: 400px;
+.copyright {
+    font-family: 'EB Garamond', serif;
+    text-align: right;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding-right: 3em;
+    color: #aab8c4;
 }
+
+
+/* styles for sidebar items */
 .icon {
     width: 30px;
     padding: .5em;
@@ -80,29 +103,57 @@ main {
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-right: 5%;
+    
 }
-p {
-    font-family: 'Spartan', sans-serif;
-}
+
+
+/* styles for grid field */
 .thumbnail {
     width: 360px;
-    height: 260px;
+    height: 240px;
+    padding: 30px;
 }
-#grid {
+.tiles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: flex-start;
 }
-#about {
-    padding: 30px;
-    margin-top: 160px;
+.about {
+    margin-top: 100px;
+    grid-area: about;
+    padding: 2em;
 }
 figure:hover {
-    background: linear-gradient(180deg, #f0f8ff, #aab8c4);
-    transform: scale(1.0001);
-    padding: 15px 15px 0px 15px;
-    transition: .4s;
+    background: linear-gradient(135deg, #aab8c4, #f0f8ff);
+    transition: .5s;
+    border: none;
+    box-shadow: none;
+}
+
+
+@media (max-width: 900px)
+{
+    .container {
+        display: block;
+    }
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 420px;
+    }
+    .about {
+        padding-top: 350px;
+    }
+    h1 {
+        margin-top: 30px;
+        padding: none;
+    }
+    .side-text {
+        padding-right: 2em;
+    }
 }
