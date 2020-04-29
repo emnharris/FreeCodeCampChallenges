@@ -84,7 +84,7 @@ p {
     font-size: 1em;
     line-height: 1.4em;
     padding-right: 3em;
-    color: #aab8c4;
+    color: #374958;
 }
 
 
@@ -103,7 +103,6 @@ p {
     flex-wrap: wrap;
     justify-content: flex-end;
     padding-right: 5%;
-    
 }
 
 
@@ -138,13 +137,14 @@ figure:hover {
     .container {
         margin: 0;
         display: block;
-        overflow-x: hide;
+        overflow-x: hidden;
     }
     .sidebar {
         display: block;
         position: relative;
         width: 100%;
-        height: 380px;
+        padding: 30px;
+        /* height: 380px; */
     }
     .about {
         margin-top: 0px;
@@ -154,26 +154,45 @@ figure:hover {
         padding: none;
     }
     .side-text {
-        padding-right: 2em;
+        /* padding-right: 2em; */
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
     }
-    .tiles {
-        margin-left: 0px;
-    }
+
     .copyright {
         width: 100%;
         text-align: center;
+        color: black;
     }
     .thumbnail {
-        width: 300px;
-        height: 200px;
+        /* width: 100%; */
+        /* max-height: 240px; */
         padding: 30px;
+        object-fit: cover;
+        /* margin-right: 30px; */
     }
     .tiles {
-        width: 100%;
         display: block;
-
+        position: relative;
+        /* width: 100%; */
+        padding: 30px;
+        justify-content: center;
     }
     figure {
         margin: 0;
+        width: 100%;
+        overflow-x: none;
+    }
+    .title {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
     }
 }
