@@ -93,30 +93,6 @@ img {
     text-decoration: none;
     text-shadow: 2px 2px #333f48;
 }
-/* #toggle {
-    display: none;
-    font-size: 1.5em;
-    padding: 1em;
-    color: #333f48;
-    background: #f9fafc;
-    border-bottom: #d6d2c4 2px solid;
-}
-.accordion {
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-  }
-.panel {
-    display: none;
-    overflow: hidden;
-}
-.active, .accordion:hover {
-    background-color: #ccc; 
-} */
 
 /* Navbar styles */
 .navbar {
@@ -251,7 +227,7 @@ figcaption > h3 > a:hover {
     align-items: center;
     padding: 20px 0px;
     border-top: #333f48 4px solid;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .logo {
     height: 75px;
