@@ -108,9 +108,11 @@ p {
 
 /* styles for grid field */
 .thumbnail {
-    width: 360px;
-    height: 240px;
+    /* max-width: 360px; */
+    width: 100%;
+    min-height: 270px;
     padding: 30px;
+    object-fit: cover;
 }
 .tiles {
     display: flex;
@@ -118,11 +120,16 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    
 }
 .about {
     margin-top: 100px;
     grid-area: about;
     padding: 2em;
+}
+figure {
+    max-width: 360px;
+    flex-grow: 2;
 }
 figure:hover {
     background: linear-gradient(135deg, #aab8c4, #f0f8ff);
@@ -132,59 +139,36 @@ figure:hover {
 }
 
 
+/* mobile responsivity */
 @media (max-width: 900px)
 {
-    .container {
-        margin: 0;
-        display: block;
+    body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
         overflow-x: hidden;
+    }
+    .container {
+        display: block;
+        position: relative;
+        width: auto; */
     }
     .sidebar {
         display: block;
         position: relative;
-        width: 100%;
+        width: auto;
         padding: 30px;
-        /* height: 380px; */
+        margin: 0px;
     }
     .about {
+        display: block;
+        position: relative;
+        width: auto;
         margin-top: 0px;
     }
     h1 {
-        margin-top: 0px;
+        margin: 0px;
         padding: none;
-    }
-    .side-text {
-        /* padding-right: 2em; */
-        display: block;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-
-    .copyright {
-        width: 100%;
-        text-align: center;
-        color: black;
-    }
-    .thumbnail {
-        /* width: 100%; */
-        /* max-height: 240px; */
-        padding: 30px;
-        object-fit: cover;
-        /* margin-right: 30px; */
-    }
-    .tiles {
-        display: block;
-        position: relative;
-        /* width: 100%; */
-        padding: 30px;
-        justify-content: center;
-    }
-    figure {
-        margin: 0;
-        width: 100%;
-        overflow-x: none;
     }
     .title {
         text-align: center;
@@ -192,7 +176,42 @@ figure:hover {
     h2 {
         text-align: center;
     }
+    .side-text {
+        display: block;
+        position: relative;
+        width: auto;
+        text-align: center;
+    }
     .icons {
         justify-content: center;
+    }
+    .tiles {
+        justify-content: space-around;
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    figure {
+        width: auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    figure:hover {
+        background: linear-gradient(135deg, #aab8c4, #f0f8ff);
+        transition: .5s;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+    }
+    .thumbnail {
+        min-height: 0px;
+        max-width: 85%;
+        margin: 0px;
+        justify-content: center;
+    }
+    .copyright {
+        text-align: center;
+        color: black;
+        padding: none;
     }
 }
