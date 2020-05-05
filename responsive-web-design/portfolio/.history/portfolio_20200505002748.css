@@ -108,7 +108,7 @@ p {
 
 /* styles for grid field */
 .thumbnail {
-    max-width: 360px;
+    /* max-width: 360px; */
     width: 100%;
     min-height: 270px;
     padding: 30px;
@@ -128,8 +128,8 @@ p {
     padding: 2em;
 }
 figure {
-    /* max-width: 360px; */
-    /* flex-grow: 2; */
+    max-width: 360px;
+    flex-grow: 2;
 }
 figure:hover {
     background: linear-gradient(135deg, #aab8c4, #f0f8ff);
@@ -175,7 +175,6 @@ figure:hover {
     }
     h2 {
         text-align: center;
-        padding: 0px;
     }
     .side-text {
         display: block;
@@ -206,7 +205,7 @@ figure:hover {
     }
     .thumbnail {
         min-height: 0px;
-        /* max-width: 85%; */
+        max-width: 85%;
         margin: 0px;
         justify-content: center;
     }
@@ -214,9 +213,5 @@ figure:hover {
         text-align: center;
         color: black;
         padding: none;
-        padding: 0px;
-    }
-    footer {
-        justify-content: center;
     }
 }

@@ -206,7 +206,7 @@ figure:hover {
     }
     .thumbnail {
         min-height: 0px;
-        /* max-width: 85%; */
+        max-width: 85%;
         margin: 0px;
         justify-content: center;
     }
@@ -214,9 +214,5 @@ figure:hover {
         text-align: center;
         color: black;
         padding: none;
-        padding: 0px;
-    }
-    footer {
-        justify-content: center;
     }
 }

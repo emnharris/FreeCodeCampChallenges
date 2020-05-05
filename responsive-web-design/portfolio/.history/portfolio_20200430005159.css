@@ -108,7 +108,7 @@ p {
 
 /* styles for grid field */
 .thumbnail {
-    max-width: 360px;
+    /* max-width: 360px; */
     width: 100%;
     min-height: 270px;
     padding: 30px;
@@ -128,8 +128,8 @@ p {
     padding: 2em;
 }
 figure {
-    /* max-width: 360px; */
-    /* flex-grow: 2; */
+    max-width: 360px;
+    flex-grow: 2;
 }
 figure:hover {
     background: linear-gradient(135deg, #aab8c4, #f0f8ff);
@@ -169,22 +169,27 @@ figure:hover {
     h1 {
         margin: 0px;
         padding: none;
+        text-align: start;
     }
     .title {
-        text-align: center;
+        text-align: left;
+        padding-left: 10px;
     }
     h2 {
-        text-align: center;
-        padding: 0px;
+        text-align: left;
+        padding-left: 1.25em;
+        margin-top: -.5em;
     }
     .side-text {
         display: block;
         position: relative;
-        width: auto;
+        width: 100%;
         text-align: center;
+        margin-left: 1fr;
+        margin-right: 1fr;
     }
     .icons {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .tiles {
         justify-content: space-around;
@@ -206,17 +211,14 @@ figure:hover {
     }
     .thumbnail {
         min-height: 0px;
-        /* max-width: 85%; */
+        max-width: 85%;
         margin: 0px;
         justify-content: center;
     }
     .copyright {
-        text-align: center;
+        width: 100%;
+        text-align: left;
         color: black;
-        padding: none;
-        padding: 0px;
-    }
-    footer {
-        justify-content: center;
+        padding-left: 2em;
     }
 }
