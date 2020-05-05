@@ -1,3 +1,5 @@
+![](https://github.com/emnharris/FreeCodeCampChallenges/blob/master/fCC-logo.png)
+
 # FreeCodeCampChallenges
 A collection for the challenges I complete through freecodecamp.org. I'm currently working on the Responsive Web Design Certification.
 
