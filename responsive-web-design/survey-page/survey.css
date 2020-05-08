@@ -117,7 +117,7 @@ footer {
 @media (max-width: 900px)
 {
     .spacer {
-        padding-left: 150px;
+        padding-left: 100px;
     }
     body {
         overflow-x: hidden;
@@ -127,5 +127,8 @@ footer {
 {
     header {
         position: relative;
+    }
+    .logo {
+        max-width: 150px;
     }
 }
