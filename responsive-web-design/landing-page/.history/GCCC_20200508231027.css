@@ -79,13 +79,12 @@ img {
     font-weight: 550;
     font-size: 1.5em;
     text-align: center;
-    color: rgba (51, 63, 72, 1)
 }
 .hero-link {
-    /* background: rgba (51, 63, 72, 0.7); */
+    background: rgba (51, 63, 72, 0.7);
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 35px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -182,12 +181,12 @@ hr {
     border: none;
 }
 #image {
-    flex-grow: 2;
-    padding-right: 1.5em;
+    width: 1fr;
+    /* flex-basis: 33%; */
 }
 #text {
-    max-width: 1000px;
-    flex-shrink: 2;
+    max-width: 2fr;
+    /* flex-basis: 60%; */
 }
 figure {
     padding: 2% 5%;
@@ -243,30 +242,13 @@ figcaption > h3 > a:hover {
     color: #333f48;
     font-weight: 600;
 }
-
-
-@media (max-width: 1000px)
+/* @media (max-width: 700px)
 {
-    h1 {
-        text-align: center;
-        margin-top: .5em;
-        padding: 0px;
+    .navbar {
+        display: none;
     }
-    
-    #text {
-        width: 100%;
-    }
-    .hero-link {
-        text-align: center;
-    }
-    
-}
+    #toggle {
+        display: block;
 
-@media (max-height: 900px)
-{
-    .logo {
-        height: 40px;
-        width: auto;
-        padding: 10px 20px;
     }
-}
+} */

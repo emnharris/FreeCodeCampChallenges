@@ -79,13 +79,12 @@ img {
     font-weight: 550;
     font-size: 1.5em;
     text-align: center;
-    color: rgba (51, 63, 72, 1)
 }
 .hero-link {
-    /* background: rgba (51, 63, 72, 0.7); */
+    background: rgba (51, 63, 72, 0.7);
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 35px;
     text-align: center;
     color: white;
     text-decoration: none;
@@ -247,26 +246,7 @@ figcaption > h3 > a:hover {
 
 @media (max-width: 1000px)
 {
-    h1 {
-        text-align: center;
-        margin-top: .5em;
-        padding: 0px;
-    }
-    
     #text {
-        width: 100%;
-    }
-    .hero-link {
-        text-align: center;
-    }
-    
-}
-
-@media (max-height: 900px)
-{
-    .logo {
-        height: 40px;
-        width: auto;
-        padding: 10px 20px;
+        max-width: 100%;
     }
 }

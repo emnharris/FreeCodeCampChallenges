@@ -79,10 +79,9 @@ img {
     font-weight: 550;
     font-size: 1.5em;
     text-align: center;
-    color: rgba (51, 63, 72, 1)
 }
 .hero-link {
-    /* background: rgba (51, 63, 72, 0.7); */
+    background: rgba (51, 63, 72, 0.7);
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 500;
     font-size: 1.5em;
