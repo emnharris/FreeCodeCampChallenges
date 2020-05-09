@@ -181,7 +181,7 @@ body {
 .grid {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 1400px;
@@ -196,6 +196,13 @@ hr {
 }
 #image {
     padding-right: 1.5em;
+    flex-basis: 30%;
+    flex-grow: 1;
+}
+#text {
+    /* max-width: 900px; */
+    flex-basis: 80%;
+    flex-basis: 2;
 }
 figure {
     padding: 2% 5%;
@@ -266,7 +273,6 @@ figcaption > h3 > a:hover {
         margin: 0px;
         padding: 0px;
         padding-bottom: 20px;
-        justify-content: left;
     }
     #text {
         max-width: auto;
@@ -296,13 +302,7 @@ figcaption > h3 > a:hover {
     .navbar-text {
         justify-content: flex-start safe;
     }
-}
-@media (max-width: 1000px)
-{
-    .grid {
-        flex-wrap: wrap;
-        
-    }
+
 }
 
 @media (max-width: 420px)
@@ -323,21 +323,17 @@ figcaption > h3 > a:hover {
         width: 100vw;
     }
     .logo {
-        height: 45px;
-        max-width: auto;
+        height: 40px;
+        width: auto;
         padding: 10px 20px;
-    }
-    .footer {
-        justify-content: flex-start;
     }
 }
 
-@media (max-height: 900px) and (max-width: 520px)
+@media (max-height: 900px)
 {
     .logo {
-        height: 45px;
-        max-width: auto;
+        height: 40px;
+        width: auto;
         padding: 10px 20px;
     }
-    
 }

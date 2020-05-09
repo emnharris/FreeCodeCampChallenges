@@ -266,7 +266,7 @@ figcaption > h3 > a:hover {
         margin: 0px;
         padding: 0px;
         padding-bottom: 20px;
-        justify-content: left;
+        
     }
     #text {
         max-width: auto;
@@ -301,7 +301,6 @@ figcaption > h3 > a:hover {
 {
     .grid {
         flex-wrap: wrap;
-        
     }
 }
 
@@ -323,21 +322,17 @@ figcaption > h3 > a:hover {
         width: 100vw;
     }
     .logo {
-        height: 45px;
-        max-width: auto;
+        height: 40px;
+        width: auto;
         padding: 10px 20px;
-    }
-    .footer {
-        justify-content: flex-start;
     }
 }
 
-@media (max-height: 900px) and (max-width: 520px)
+@media (max-height: 900px)
 {
     .logo {
-        height: 45px;
-        max-width: auto;
+        height: 40px;
+        width: auto;
         padding: 10px 20px;
     }
-    
 }

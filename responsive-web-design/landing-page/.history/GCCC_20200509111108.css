@@ -332,7 +332,7 @@ figcaption > h3 > a:hover {
     }
 }
 
-@media (max-height: 900px) and (max-width: 520px)
+@media (max-height: 900px and max-width: 520px)
 {
     .logo {
         height: 45px;
