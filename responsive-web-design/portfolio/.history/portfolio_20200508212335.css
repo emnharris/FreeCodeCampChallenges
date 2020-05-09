@@ -120,11 +120,16 @@ p {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    
 }
 .about {
     margin-top: 100px;
     grid-area: about;
     padding: 2em;
+}
+figure {
+    /* max-width: 360px; */
+    /* flex-grow: 2; */
 }
 figure:hover {
     background: linear-gradient(135deg, #aab8c4, #f0f8ff);
@@ -152,7 +157,7 @@ figure:hover {
         display: block;
         position: relative;
         width: auto;
-        padding: 20px;
+        padding: 30px;
         margin: 0px;
     }
     .about {
@@ -201,9 +206,9 @@ figure:hover {
     }
     .thumbnail {
         min-height: 0px;
+        /* max-width: 85%; */
         margin: 0px;
         justify-content: center;
-        padding: 20px;
     }
     .copyright {
         text-align: center;
