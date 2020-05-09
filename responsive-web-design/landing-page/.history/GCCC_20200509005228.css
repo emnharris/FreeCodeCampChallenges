@@ -281,12 +281,18 @@ figcaption > h3 > a:hover {
     }
     #image {
         width: 100vw;
-        padding: 1.5em;
+        padding: 1.5em 0em;
         height: auto;
     }
     .hero-link {
         text-align: center;
         
+    }
+    img {
+        min-width: 100vw;
+    }
+    figcaption {
+        width: 100vw;
     }
     #links {
         padding: 0em 1.5em;
@@ -301,26 +307,7 @@ figcaption > h3 > a:hover {
 
 }
 
-@media (max-width: 420px)
-{
-    #image {
-        width: 100vw;
-        padding: 1.5em 0em;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    img {
-        width: 100%;
-        min-width: 150px;        
-        padding: 0px;
-    } 
-    figcaption {
-        width: 100vw;
-    }
-}
-
-@media (max-height: 900px; max-width: 500px)
+@media (max-height: 900px)
 {
     .logo {
         height: 40px;
